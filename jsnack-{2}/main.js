@@ -23,9 +23,16 @@ var bicycles = [
 
 ];
 
-bicycles.sort((a,b) => a.peso - b.peso );
+ //bicycles.sort((a,b) => a.peso - b.peso );
 
 //console.log( "La bici più leggera è: " + bicycles[0].nome + "con il peso di: " + bicycles[0].peso);
-const{nome, peso} = bicycles;
+let biciclette = bicycles[0];
 
-console.log(`$(bicycles[o].nome) è lapiù leggera con un peso di $(bicycles.peso[0])` );
+for (let i =0; i < bicycles.length; i++){
+  if(bicycles[0].peso < bicycles.peso){
+    biciclette = bicycles[i];
+  }
+}
+
+const {nome} = biciclette;
+console.log(` la bici più leggera è $(nome)`);
