@@ -25,4 +25,7 @@ var bicycles = [
 
 bicycles.sort((a,b) => a.peso - b.peso );
 
-console.log( "La bici più leggera è: " + bicycles[0].nome + "con il peso di: " + bicycles[0].peso);
+//console.log( "La bici più leggera è: " + bicycles[0].nome + "con il peso di: " + bicycles[0].peso);
+const{nome, peso} = bicycles;
+
+console.log(`$(bicycles[o].nome) è lapiù leggera con un peso di $(bicycles.peso[0])` );
