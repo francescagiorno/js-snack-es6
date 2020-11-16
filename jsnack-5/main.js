@@ -14,9 +14,19 @@ let choiseTwo =  prompt(` scegli un numero fra 0 e ${myArray.length}`);
 
 
 const newArr = myArray.filter((elemnt,index) =>{
-  if(index >= choiseOne && index <= choiseTwo){
-    return elemnt;
-  }
+  return index >= choiseOne && index <= choiseTwo;
 });
+
+
+/*if(index >= choiseOne && index <= choiseTwo){
+  return true;
+} else return false;
+
+if (expr) {
+return true;
+} else return false;
+=====> return expr;
+
+*/
 
 console.log(newArr);
