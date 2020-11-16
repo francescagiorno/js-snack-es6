@@ -28,5 +28,5 @@ function randomLetters(){
 
 const newArr = arrayObj.map((element, index) =>{
   element.position = randomLetters()
-  return
+  return element
 })
