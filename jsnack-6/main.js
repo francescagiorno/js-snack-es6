@@ -22,11 +22,18 @@ var arrayObj = [
 function randomLetters(){
 
    const lettereRandom = "abcdefghilmnopqrstuvz"
-   return lettereRandom[Math.floor(Math.random() * lettereRandom.lenght)]
+   return lettereRandom[Math.floor(Math.random() * lettereRandom.length)]
 
 }
 
 const newArr = arrayObj.map((element, index) =>{
-  element.position = randomLetters()
-  return element
+  let newEl = {
+    ...element,
+    position: randomLetters()
+  }
+
+  return newEl
 })
+
+console.log(newArr);
+console.log(arrayObj);
